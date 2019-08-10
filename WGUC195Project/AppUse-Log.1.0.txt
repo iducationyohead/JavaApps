@@ -1,0 +1,8 @@
+Jul 29, 2019 10:36:21 PM Scheduler.controllers.LoginScreenController loginScreenButtonAction
+INFO: test logged in.
+Jul 29, 2019 10:37:47 PM Scheduler.controllers.LoginScreenController loginScreenButtonAction
+INFO: test logged in.
+Jul 29, 2019 10:39:43 PM Scheduler.controllers.LoginScreenController loginScreenButtonAction
+INFO: test logged in.
+Jul 29, 2019 10:40:23 PM Scheduler.controllers.LoginScreenController loginScreenButtonAction
+INFO: test logged in.

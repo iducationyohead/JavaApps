@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="825.0" prefWidth="1000.0" style="-fx-background-color: #6495ED;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Scheduler.controllers.MainScreenController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem id="mainScreenLogOutItem" mnemonicParsing="false" onAction="#LOGOUT_HANDLER" text="Log Out" />
+                  <MenuItem id="mainScreenExitItem" mnemonicParsing="false" onAction="#EXIT_HANDLER" text="Exit" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Views">
+               <items>
+                  <MenuItem id="mainScreenAppointmentsItem" mnemonicParsing="false" onAction="#SHOW_APPOINTMENTS" text="Appointments" />
+                  <MenuItem id="mainScreenCustomersItem" mnemonicParsing="false" onAction="#SHOW_CUSTOMERS" text="Customers" />
+                  <MenuItem id="mainScreenReportsItem" mnemonicParsing="false" onAction="#SHOW_REPORTS" text="Reports" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

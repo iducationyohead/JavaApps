@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #6495ED;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Scheduler.controllers.AppointmentListScreenController">
+   <children>
+      <Label alignment="CENTER" layoutY="4.0" prefHeight="31.0" prefWidth="1000.0" text="AppointmentList" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutY="35.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="715.0" prefWidth="1000.0" style="-fx-background-color: white;">
+         <children>
+            <RadioButton fx:id="appointmentMonthlyViewRadio" alignment="TOP_LEFT" layoutX="167.0" layoutY="10.0" mnemonicParsing="false" onAction="#appointmentMonthlyViewRadioButtonSelected" text="Monthly View" />
+            <RadioButton fx:id="appointmentWeeklyViewRadio" alignment="TOP_LEFT" layoutX="37.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#appointmentWeeklyViewRadioButtonSelected" prefHeight="17.0" prefWidth="103.0" text="Weekly View" />
+            <TableView fx:id="appointmentViewTable" layoutY="43.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="612.0" prefWidth="1000.0">
+               <columns>
+                  <TableColumn fx:id="appointmentViewStartColumn" prefWidth="110.0" text="Start" />
+                  <TableColumn fx:id="appointmentViewEndColumn" prefWidth="110.0" text="End" />
+                  <TableColumn fx:id="appointmentViewCustomerColumn" prefWidth="220.0" text="Customer" />
+                  <TableColumn fx:id="appointmentViewTypeColumn" prefWidth="128.0" text="Type" />
+                  <TableColumn fx:id="appointmentViewTitleColumn" prefWidth="115.0" text="Title" />
+                  <TableColumn fx:id="appointmentViewAuthorColumn" prefWidth="121.0" text="Created By" />
+                  <TableColumn fx:id="appointmentViewCustomerIdColumn" prefWidth="91.0" text="CustomerId" />
+                  <TableColumn fx:id="appointmentViewAppointmentIdColumn" prefWidth="100.0" text="Appt Id" />
+               </columns>
+            </TableView>
+            <Button fx:id="appointmentListEditButton" layoutX="465.0" layoutY="671.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#appointmentListEditButtonAction" prefHeight="30.0" prefWidth="70.0" text="Edit">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="appointmentListDeleteButton" layoutX="722.0" layoutY="671.0" mnemonicParsing="false" onAction="#appointmentListDeleteButtonAction" prefHeight="30.0" prefWidth="70.0" text="Delete">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="appointmentListAddButton1" layoutX="226.0" layoutY="671.0" mnemonicParsing="false" onAction="#appointmentListAddButtonAction" prefHeight="30.0" prefWidth="70.0" text="Add">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+    
+   </children>
+</AnchorPane>

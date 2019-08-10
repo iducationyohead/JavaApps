@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="aeScreenAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #6495ED;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Scheduler.controllers.AddEditAppointmentScreenController">
+   <children>
+      <AnchorPane layoutX="20.0" layoutY="45.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="561.0" style="-fx-background-color: white;">
+         <children>
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="-9.0" layoutY="57.0" prefHeight="25.0" prefWidth="115.0" text="Appointment Name">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="9.0" layoutY="98.0" prefHeight="25.0" prefWidth="94.0" text="Date">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="9.0" layoutY="140.0" prefHeight="25.0" prefWidth="94.0" text="Start Time">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="9.0" layoutY="178.0" prefHeight="25.0" prefWidth="94.0" text="End Time">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="-4.0" layoutY="223.0" prefHeight="25.0" prefWidth="106.0" text="Appointment Type">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Label>
+            <TableView fx:id="appointmentScreenCustomerTable" layoutX="313.0" layoutY="49.0" prefHeight="231.0" prefWidth="222.0">
+              <columns>
+                  <TableColumn fx:id="appointmentScreenAddCustomerNameColumn" prefWidth="220.0" text="Customer Name " />
+                  <TableColumn fx:id="appointmentScreenAddCustomerIdColumn" prefWidth="75.0" text="CustomerId" visible="false" />
+              </columns>
+            </TableView>
+            <TextField fx:id="appointmentScreenCustomerNameField" layoutX="111.0" layoutY="18.0" prefHeight="25.0" prefWidth="161.0" />
+            <TextField fx:id="appointmentScreenAppointmentNameField" layoutX="112.0" layoutY="57.0" prefHeight="25.0" prefWidth="161.0" />
+            <DatePicker fx:id="appointmentScreenDatePicker" layoutX="112.0" layoutY="98.0" prefHeight="25.0" prefWidth="161.0" promptText="Select Appointment Date" />
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="215.0" layoutY="16.0" prefHeight="25.0" prefWidth="115.0" text="Search">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="appointmentScreenStartTimeBox" layoutX="111.0" layoutY="140.0" onAction="#AddEditAppointmentScreenPrepopulateEndTime" prefHeight="25.0" prefWidth="161.0" />
+            <ComboBox fx:id="appointmentScreenEndTimeBox" layoutX="111.0" layoutY="179.0" prefHeight="25.0" prefWidth="161.0" />
+            <ComboBox fx:id="appointmentScreenAppointmentTypeBox" layoutX="111.0" layoutY="223.0" prefHeight="25.0" prefWidth="161.0" />
+            <TextField fx:id="appointmentScreenAppointmentSearchField" layoutX="339.0" layoutY="16.0" prefHeight="25.0" prefWidth="170.0" />
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="-8.0" layoutY="17.0" prefHeight="25.0" prefWidth="115.0" text="Customer Name">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="AddEditAppointmentCustIdLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="49.0" layoutY="268.0" prefHeight="25.0" prefWidth="46.0" text="Cust ID" visible="false">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Label>
+            <TextField fx:id="appointmentScreenCustomerIdField" layoutX="106.0" layoutY="268.0" prefHeight="25.0" prefWidth="61.0" text="addEditCustomerIdField" visible="false" />
+            <TextField fx:id="appointmentScreenAppointmentIdField" layoutX="220.0" layoutY="268.0" prefHeight="25.0" prefWidth="61.0" text="addEditAppointmentIdField" visible="false" />
+            <Label fx:id="AddEditAppointmenApptIdLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="169.0" layoutY="268.0" prefHeight="25.0" prefWidth="46.0" text="Appt Id" visible="false">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="addEditAppointmentScreenLabel" alignment="CENTER" layoutX="1.0" layoutY="7.0" prefHeight="31.0" prefWidth="600.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="appointmentScreenSaveButton" layoutX="270.0" layoutY="355.0" mnemonicParsing="false" onAction="#appointmentScreenSaveButtonAction" prefHeight="31.0" prefWidth="61.0" text="Save">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+    
+   </children>
+</AnchorPane>
